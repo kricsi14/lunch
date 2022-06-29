@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "Francia Tacos",
+    "menu": [
+      {
+        "id": 1,
+        "text": "Csirke",
+        "image": "https://scontent.fbud10-1.fna.fbcdn.net/v/t39.30808-6/279250797_1026067201673403_667362697897311980_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=HaB8GweOyZEAX-u05lz&_nc_ht=scontent.fbud10-1.fna&oh=00_AT-lQy7GUrxMa5gVvi9fxfa0JgLLOv1uy4OuH-fEb2BEdQ&oe=62C04006"
+      },
+      {
+        "id": 2,
+        "text": "Marha",
+        "image": "https://scontent.fbud10-1.fna.fbcdn.net/v/t39.30808-6/279339500_1026625094950947_2510784181872593028_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=68285Hnur-AAX-fwBgK&_nc_ht=scontent.fbud10-1.fna&oh=00_AT8s3D82Qa_iT2r6aP3ZsILG0NNk3-gFpcvBWwkHGIS4Hw&oe=62C17EDB"
+      },
+      {
+        "id": 3,
+        "text": "Vegyes",
+        "image": "https://scontent.fbud10-1.fna.fbcdn.net/v/t39.30808-6/251060935_914147742865350_18039506448438712_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=k4Ex--v7JJMAX_hlvcq&_nc_ht=scontent.fbud10-1.fna&oh=00_AT8yF2NIMosn_IkkpSJ3pqCYINdqHFfTNPtz7Sf2GykNOA&oe=62C1BB00"
+      }
+    ],
+    "sauces": [
+      {
+        "id": 4,
+        "text": "Sima",
+        "image": "https://cdn.pixabay.com/photo/2013/12/11/08/35/food-226773_1280.jpg"
+      },
+      {
+        "id": 5,
+        "text": "Edes",
+        "image": "https://cdn.pixabay.com/photo/2013/12/11/08/35/food-226773_1280.jpg"
+      },
+      {
+        "id": 6,
+        "text": "Enyhen csipos",
+        "image": "https://cdn.pixabay.com/photo/2013/12/11/08/35/food-226773_1280.jpg"
+      },
+      {
+        "id": 7,
+        "text": "Csipos",
+        "image": "https://cdn.pixabay.com/photo/2013/12/11/08/35/food-226773_1280.jpg"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Kovacs Muhely",
+    "menu": [
+      {
+        "id": 1,
+        "text": "Mega Vega Burger",
+        "image": "https://media-cdn.tripadvisor.com/media/photo-s/0e/b9/85/2f/mega-vega-burger.jpg"
+      }
+    ]
+  }
+]

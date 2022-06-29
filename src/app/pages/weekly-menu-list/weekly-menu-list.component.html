@@ -1,0 +1,9 @@
+Weekly menu list
+<!-- Week tabs -->
+<div *ngIf="weeks !== null" class="flex justify-around bg-gray-100">
+  <ng-container *ngFor="let week of weeks; let i">
+    <app-week-tab-link [url]="'/week/' + week.id" [text]="week.date"></app-week-tab-link>
+  </ng-container>
+</div>
+
+<router-outlet></router-outlet>
