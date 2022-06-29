@@ -1,0 +1,7 @@
+<div *ngIf="meal !== null" [ngClass]="{'selected': selected}" class="p-3 rounded bg-white transition-all duration-300">
+  <div class="overflow-hidden w-full h-auto aspect-square">
+    <img class="object-cover min-h-full w-full hover:scale-110 transition-all duration-500" [src]="meal.image"
+         alt="{{meal.text}}"/>
+  </div>
+  <h3 class="text-green-600 text-md text-center uppercase mt-3">{{meal.text}}</h3>
+</div>

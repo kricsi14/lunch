@@ -1,0 +1,20 @@
+<div *ngIf="restaurant !== null" class="container mx-auto">
+  <h2 class="text-xl px-3 mt-7 uppercase">Meals</h2>
+  <div
+    class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-5">
+    <ng-container *ngFor="let item of restaurant.menu">
+      <app-meal-card [meal]="item" [selected]="item.selected === true" (click)="orderItem(item)"></app-meal-card>
+    </ng-container>
+  </div>
+  <ng-container *ngIf="restaurant.sauces">
+    <h2 class="text-xl px-3 mt-7 uppercase">Sauces</h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mt-5">
+      <ng-container *ngFor="let sauce of restaurant.sauces">
+        <app-meal-card [meal]="sauce" [selected]="sauce.selected === true"
+                       (click)="orderItem(sauce, true)"></app-meal-card>
+      </ng-container>
+    </div>
+  </ng-container>
+
+</div>
