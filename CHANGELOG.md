@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.3](https://github.com/kricsi14/lunch/compare/v0.0.2...v0.0.3) (2022-06-30)
+
+
+### Features
+
+* add user selects meals ([5ef1ddc](https://github.com/kricsi14/lunch/commit/5ef1ddc347db001e5a4ce6c20623ebb5cb9221ff))
+
+
+### Bug Fixes
+
+* **database:** fix always reset data ([284e9ba](https://github.com/kricsi14/lunch/commit/284e9baa3726e009133dda2a85d6b0990360276f))
+
 ### [0.0.2](https://github.com/kricsi14/lunch/compare/v0.0.1...v0.0.2) (2022-06-29)
 
 
