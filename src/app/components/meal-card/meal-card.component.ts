@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core'
-import { MenuItem } from '../../interfaces/responses'
+import { Meal, Sauce } from '../../interfaces'
 
 @Component({
   selector: 'app-meal-card',
@@ -8,7 +8,7 @@ import { MenuItem } from '../../interfaces/responses'
 })
 export class MealCardComponent implements OnInit {
 
-  @Input() meal: MenuItem | null = null
+  @Input() meal: Meal | Sauce | null = null
   @Input() selected: boolean = false
 
   constructor () { }

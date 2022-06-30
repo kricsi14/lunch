@@ -2,20 +2,23 @@
   {
     "id": 1,
     "name": "Francia Tacos",
-    "menu": [
+    "meals": [
       {
         "id": 1,
         "text": "Csirke",
+        "details": "tortillával, sült burgonyával, házi sajtszósszal",
         "image": "https://scontent.fbud10-1.fna.fbcdn.net/v/t39.30808-6/279250797_1026067201673403_667362697897311980_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=HaB8GweOyZEAX-u05lz&_nc_ht=scontent.fbud10-1.fna&oh=00_AT-lQy7GUrxMa5gVvi9fxfa0JgLLOv1uy4OuH-fEb2BEdQ&oe=62C04006"
       },
       {
         "id": 2,
         "text": "Marha",
+        "details": "tortillával, sült burgonyával, házi sajtszósszal",
         "image": "https://scontent.fbud10-1.fna.fbcdn.net/v/t39.30808-6/279339500_1026625094950947_2510784181872593028_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=68285Hnur-AAX-fwBgK&_nc_ht=scontent.fbud10-1.fna&oh=00_AT8s3D82Qa_iT2r6aP3ZsILG0NNk3-gFpcvBWwkHGIS4Hw&oe=62C17EDB"
       },
       {
         "id": 3,
         "text": "Vegyes",
+        "details": "tortillával, sült burgonyával, házi sajtszósszal",
         "image": "https://scontent.fbud10-1.fna.fbcdn.net/v/t39.30808-6/251060935_914147742865350_18039506448438712_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=k4Ex--v7JJMAX_hlvcq&_nc_ht=scontent.fbud10-1.fna&oh=00_AT8yF2NIMosn_IkkpSJ3pqCYINdqHFfTNPtz7Sf2GykNOA&oe=62C1BB00"
       }
     ],
@@ -45,7 +48,7 @@
   {
     "id": 2,
     "name": "Kovacs Muhely",
-    "menu": [
+    "meals": [
       {
         "id": 1,
         "text": "Mega Vega Burger",

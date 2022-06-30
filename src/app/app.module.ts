@@ -8,7 +8,9 @@ import { MenuListComponent } from './components/menu-list/menu-list.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http'
 import { FakeDataInterceptor } from './interceptors/fake-data.interceptor';
 import { WeekTabLinkComponent } from './components/week-tab-link/week-tab-link.component';
-import { MealCardComponent } from './components/meal-card/meal-card.component'
+import { MealCardComponent } from './components/meal-card/meal-card.component';
+import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { UsersComponent } from './pages/users/users.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MealCardComponent } from './components/meal-card/meal-card.component'
     WeeklyMenuListComponent,
     MenuListComponent,
     WeekTabLinkComponent,
-    MealCardComponent
+    MealCardComponent,
+    ToolbarComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,16 @@
+<div class="bg-gray-200 py-3">
+  <div class="container mx-auto">
+    <div class="flex flex-nowrap justify-between items-center">
+      <a class="">
+        <img class="h-10" src="https://www.dynata.com/wp-content/themes/dynata/images/dynata-logo.png"/>
+      </a>
+      <a class="text-3xl text-green-600 font-bold">
+        <h1>Launch</h1>
+      </a>
+      <nav class="">
+        <a class="mx-2" routerLink="/meals" *ngIf="signedIn">Meals</a>
+        <a class="mx-2" routerLink="/users">{{ signedIn ? 'Change user' : 'Select User' }}</a>
+      </nav>
+    </div>
+  </div>
+</div>
