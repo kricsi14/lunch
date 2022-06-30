@@ -20,8 +20,8 @@ export class DatabaseService {
   constructor () {
     // set default or read saved data
     const meta = localStorage.getItem('LunchMeta')
-    this.saveDefaultsToLocalStorage()
     if (meta === null) {
+      this.saveDefaultsToLocalStorage()
       localStorage.setItem('LunchMeta', 'meta')
     }
 
@@ -63,7 +63,7 @@ export class DatabaseService {
 
   getMenu (menuId: number, userId: number, weekId: number): Menu | null {
     const selection = this.getSelection(userId, weekId)
-    
+
     let menu = this.menus.find((menu) => menu.id === menuId) ?? null
 
     // DEEP COPY !!!!!!!!!! or manually false everything
