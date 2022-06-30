@@ -5,6 +5,7 @@ import { Menu, Selection, User, Week } from '../interfaces'
 import users from '../fake-data/users.json'
 import menus from '../fake-data/menus.json'
 import weeks from '../fake-data/weeks.json'
+import { AuthService } from './auth.service'
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class DatabaseService {
   weeks: Week[] = []
   selectedUser: User | null = null
 
-  constructor () {
+  constructor (private auth: AuthService) {
     // set default or read saved data
     const meta = localStorage.getItem('LunchMeta')
     if (meta === null) {
@@ -47,6 +48,12 @@ export class DatabaseService {
     const selectionsString = localStorage.getItem('selections')
     if (selectionsString !== null) {
       this.selections = JSON.parse(selectionsString)
+    }
+
+    const selectedUserString = localStorage.getItem('selectedUser')
+    if (selectedUserString !== null) {
+      this.selectedUser = JSON.parse(selectedUserString)
+      this.auth.signedIn.next(this.selectedUser)
     }
   }
 
