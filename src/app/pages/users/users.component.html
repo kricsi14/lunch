@@ -1,15 +1,19 @@
 <div class="container mx-auto">
   <h2 class="text-2xl px-3 mt-7 mb-3 font-medium uppercase">Users</h2>
+  <input type="text" placeholder="Search..." class="w-full my-2 p-2"
+         [(ngModel)]="search"/>
   <div class="bg-gray-100 rounded">
     <ul class="list-none">
-      <a class="block cursor-pointer py-4 px-7 hover:bg-green-200 border-b-2 last-of-type:border-b-0"
-         *ngFor="let user of users"
-         [ngClass]="{selected: selectedUser !== null && user.id === selectedUser.id}"
-         (click)="selectUser(user.id)">
-        <li>
-          <p>{{user.name}}</p>
-        </li>
-      </a>
+      <ng-container *ngFor="let user of users">
+        <a class="block cursor-pointer py-4 px-7 hover:bg-green-200 border-b-2 last-of-type:border-b-0"
+           *ngIf="user.name.toLowerCase().trim().indexOf(search.toLowerCase().trim()) !== -1"
+           [ngClass]="{selected: selectedUser !== null && user.id === selectedUser.id}"
+           (click)="selectUser(user.id)">
+          <li>
+            <p>{{user.name}}</p>
+          </li>
+        </a>
+      </ng-container>
     </ul>
   </div>
 </div>

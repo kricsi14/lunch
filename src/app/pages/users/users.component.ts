@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs'
   styleUrls: ['./users.component.scss']
 })
 export class UsersComponent implements OnInit, OnDestroy {
-
+  search = ''
   users: User[] = []
   selectedUser: User | null = null
   authSubscription: Subscription | null = null
